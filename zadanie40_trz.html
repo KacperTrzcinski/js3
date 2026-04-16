@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <meta charset="UTF-8">
+    <title>trzcinski Z40_JS</title>
+<body>
+
+    <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+        var x=prompt("podaj argument x=","");
+        var x_trz=parseFloat(x);
+        document.write("wykonał Kacper Trzcinski <br>");
+        document.write("czytany argument x="+x_trz+"<br>");
+        function f_trz(x_trz) {
+            if(x_trz>=2) {
+                return 9;
+            }
+            if((x_trz>-2)&&(x_trz<0)) {
+                return Math.pow(x_trz+1, 2);
+            }
+            if((x_trz>=0)&&(x_trz<2)) {
+                return Math.pow(x_trz, 3) + 1;
+            }
+            if (x_trz<-2){
+                return 1;
+            }
+        }
+        document.write("f(" + x + ")="+f_trz(x_trz)+"<br>");
+    </script>
+    </div>
+</body>
+</html>
+<!-- Trzcinski Z40_JS -->
